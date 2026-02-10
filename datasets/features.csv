@@ -1,0 +1,49 @@
+No.,Name,Type ,Description
+1,srcip,nominal,����� IP �ּ�
+2,sport,integer,����� ��Ʈ ��ȣ
+3,dstip,nominal,������ IP �ּ�
+4,dsport,integer,������ ��Ʈ ��ȣ
+5,proto,nominal,Ʈ����� ��������
+6,state,nominal,"���� �� ���� ���������� ��Ÿ���ϴ�. ��: ACC, CLO, CON, ECO, ECR, FIN, INT, MAS, PAR, REQ, RST, TST, TXD, URH, URN �� (-) (������ ���� ������ ���)"
+7,dur,Float,��ü ��� ���� �ð�
+8,sbytes,Integer,��������� ���������� Ʈ����� ����Ʈ
+9,dbytes,Integer,���������� ��������� Ʈ����� ����Ʈ
+10,sttl,Integer,��������� ���������� TTL(Time to Live) ��
+11,dttl,Integer,���������� ��������� TTL ��
+12,sloss,Integer,��������� �����۵ǰų� �սǵ� ��Ŷ
+13,dloss,Integer,���������� �����۵ǰų� �սǵ� ��Ŷ
+14,service,nominal,"HTTP, FTP, SMTP, SSH, DNS, FTP-DATA, IRC �� ��� �󵵰� ���� ������ ��� (-)"
+15,Sload,Float,����� �ʴ� ��Ʈ ��
+16,Dload,Float,������ �ʴ� ��Ʈ ��
+17,Spkts,integer,��������� ���������� ��Ŷ ��
+18,Dpkts,integer,���������� ��������� ��Ŷ ��
+19,swin,integer,����� TCP ������ ���� ��
+20,dwin,integer,������ TCP ������ ���� ��
+21,stcpb,integer,����� TCP �⺻ ������ ��ȣ
+22,dtcpb,integer,������ TCP �⺻ ������ ��ȣ
+23,smeansz,integer,��������� ���۵� �帧 ��Ŷ ũ���� ��հ�
+24,dmeansz,integer,���������� ���۵� �帧 ��Ŷ ũ���� ��հ�
+25,trans_depth,integer,HTTP ��û/���� Ʈ������� ���� ���������� ����
+26,res_bdy_len,integer,������ HTTP ���񽺿��� ���۵� �������� ���� ����� ������ ũ��
+27,Sjit,Float,����� ����(�и���)
+28,Djit,Float,������ ����(�и���)
+29,Stime,Timestamp,��� ���� �ð�
+30,Ltime,Timestamp,��� ������ �ð�
+31,Sintpkt,Float,����� ��Ŷ �� ���� �ð�(�и���)
+32,Dintpkt,Float,������ ��Ŷ �� ���� �ð�(�и���)
+33,tcprtt,Float,TCP ���� ���� �պ� �ð� (SYN-ACK�� ACKDAT�� ��)
+34,synack,Float,TCP ���� ���� �ð� (SYN�� SYN_ACK ��Ŷ ������ �ð�)
+35,ackdat,Float,TCP ���� ���� �ð� (SYN_ACK�� ACK ��Ŷ ������ �ð�)
+36,is_sm_ips_ports,Binary,"������� ������ IP �ּҰ� ����, ��Ʈ ��ȣ�� ���ٸ� ���� 1, �׷��� ������ 0"
+37,ct_state_ttl,Integer,Ư�� ������ �����/������ TTL ���� ���� �� ����(6)�� ��
+38,ct_flw_http_mthd,Integer,HTTP ���񽺿��� GET �� POST �޼��带 ������ �帧�� ��
+39,is_ftp_login,Binary,"FTP ������ ����ڿ� ��й�ȣ�� ���ٵǾ����� 1, �׷��� ������ 0"
+40,ct_ftp_cmd,integer,FTP ���ǿ��� ���ɾ ���Ե� �帧�� ��
+41,ct_srv_src,integer,������ �ð�(26)�� �������� �ֱ� 100���� ���� �� ������ ����(14)�� ����� �ּ�(1)�� �����ϴ� ������ ��
+42,ct_srv_dst,integer,������ �ð�(26)�� �������� �ֱ� 100���� ���� �� ������ ����(14)�� ������ �ּ�(3)�� �����ϴ� ������ ��
+43,ct_dst_ltm,integer,������ �ð�(26)�� �������� �ֱ� 100���� ���� �� ������ ������ �ּ�(3)�� �����ϴ� ������ ��
+44,ct_src_ ltm,integer,������ �ð�(26)�� �������� �ֱ� 100���� ���� �� ������ ����� �ּ�(1)�� �����ϴ� ������ ��
+45,ct_src_dport_ltm,integer,������ �ð�(26)�� �������� �ֱ� 100���� ���� �� ������ ����� �ּ�(1)�� ������ ��Ʈ(4)�� �����ϴ� ������ ��
+46,ct_dst_sport_ltm,integer,������ �ð�(26)�� �������� �ֱ� 100���� ���� �� ������ ������ �ּ�(3)�� ����� ��Ʈ(2)�� �����ϴ� ������ ��
+47,ct_dst_src_ltm,integer,������ �ð�(26)�� �������� �ֱ� 100���� ���� �� ������ �����(1)�� ������(3) �ּҸ� �����ϴ� ������ ��
+48,attack_cat,nominal,"�� ���� ī�װ����� �̸�. �� �����ͼ¿����� 9���� ī�װ����� �ֽ��ϴ�: Fuzzers, Analysis, Backdoors, DoS, Exploits, Generic, Reconnaissance, Shellcode, Worms"
