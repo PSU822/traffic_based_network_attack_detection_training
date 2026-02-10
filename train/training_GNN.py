@@ -70,7 +70,7 @@ def visualize_attention(model, edge_index, sample_X, feature_names, device):
         attn_mean = attn.mean(dim=1)
         
         print("\n" + "="*70)
-        print("🎯 가장 중요한 피처 관계 TOP 20, 냥냥!")
+        print("가장 중요한 피처 관계 TOP 20")
         print("="*70)
         
         top_k = min(20, len(attn_mean))
